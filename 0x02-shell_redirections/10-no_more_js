@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name '*.js' -not -type d | xargs rm
+find . -name '*.js' -maxdepth 1 -not -type d | xargs rm
