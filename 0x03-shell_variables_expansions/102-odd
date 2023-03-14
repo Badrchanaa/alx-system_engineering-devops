@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +1 $1 | grep -v '^\s*$' | tr '\n' '\0' | xargs -0 -n2 echo | cut -f1 -d' '
+cat $1 | grep -v '^\s*$' | tr '\n' '\0' | xargs -0 -n2 echo | cut -f1 -d' '
